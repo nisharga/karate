@@ -1,9 +1,9 @@
-import { Welcome } from './components';
+import { Profile } from './components';
 
 const HomePage = () => {
     return (
         <>
-            <Welcome />
+            <Profile />
         </>
     );
 };
