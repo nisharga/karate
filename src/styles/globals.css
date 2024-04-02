@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    * {
+        @apply m-0 p-0 box-border;
+    }
+    body {
+        @apply text-base bg-primary-50 dark:bg-gray-900 text-gray-800 dark:text-gray-300 font-normal font-roboto leading-normal;
+    }
+
+    h1 {
+        @apply text-5xl xs:text-6xl font-semibold;
+    }
+    h2 {
+        @apply text-4xl xs:text-5xl font-medium;
+    }
+    h3 {
+        @apply text-xl;
+    }
+}
+
+@layer utilities {
+    .section-gap {
+        @apply mb-16 md:mb-[150px];
+    }
+
+    .modal-open {
+        @apply overflow-hidden;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
