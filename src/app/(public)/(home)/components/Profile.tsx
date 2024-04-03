@@ -1,9 +1,19 @@
-import { Icons } from '@/components/Icons';
+import { ContentArea } from './ContentArea';
+import { Sidebar } from './Sidebar';
 
 const Profile = () => {
     return (
-        <div>
-            Profile <Icons.Support className='fill-red-500' fill='red' />
+        <div className='bg-success'>
+            <div className='container'>
+                <div className='grid grid-cols-12 gap-6 py-8'>
+                    <div className='col-span-3 '>
+                        <Sidebar />
+                    </div>
+                    <div className='col-span-9 '>
+                        <ContentArea />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

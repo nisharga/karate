@@ -12,7 +12,7 @@ const config: Config = {
             center: true,
             padding: '2rem',
             screens: {
-                '2xl': '1280px'
+                '2xl': '1380px'
             }
         },
         screens: {
@@ -26,14 +26,16 @@ const config: Config = {
         extend: {
             colors: {
                 white: '#ffffff',
-                primary: { 
+                primary: {
                     300: '#222052',
                     500: '#26235B'
                 },
                 gray: {
                     25: '#DDDDDD',
                     50: '#565656',
+                    75: '#DEDEE6',
                     100: '#D0D1D4',
+                    150: '#8280A0',
                     200: '#B9BABE',
                     300: '#A1A3A8',
                     400: '#8A8C93',
