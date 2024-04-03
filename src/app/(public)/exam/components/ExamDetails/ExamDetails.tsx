@@ -1,21 +1,25 @@
 import React from 'react';
-import { AccordionItem } from '..';
+import { AccordionItem, QuestionList } from '..';
+import { ImageUpload } from '@/utils';
 
 const ExamDetails = () => {
     return (
         <div>
             <AccordionItem title='1.MCQ Question (Mark50)'>
-                <h6 className='p-5'>
-                    Monday - Friday, 9:00 am - 6:00 pm ET <br /> +1 (248)
-                    541-2800 <br /> customerservice@usaunderwriters.com <br />
-                </h6>
+                <QuestionList />
             </AccordionItem>
-            <AccordionItem title='Customer Service & Support'>
-                <div className='p-5'>
-                    <h6 className='mb-1'>
-                        Monday - Friday, 9:00 am - 6:00 pm ET
-                    </h6>
-                    <h6 className=''>+1 (248) 541-2800</h6>
+            <AccordionItem
+                title='2.Practicle Exam(Mark 50)'
+                className='!bg-transparent'
+            >
+                <div className='py-12'>
+                    <div className='grid grid-cols-12'>
+                        <div className='col-span-12'>
+                            <div className='flex items-center justify-center w-full'>
+                                <ImageUpload />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </AccordionItem>
         </div>

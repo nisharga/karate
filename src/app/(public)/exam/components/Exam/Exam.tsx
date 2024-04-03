@@ -1,11 +1,12 @@
 import { Icons } from '@/components';
 import { ExamDetails } from '..';
 import { examDetails } from '@/static';
+import { RoundedBtn } from '@/utils';
 
 const Exam = () => {
     return (
         <div className='bg-white rounded-md shadow-sm my-8 p-6'>
-            <div className='w-full h-screen'>
+            <div className='w-full'>
                 <div className='flex justify-between items-center'>
                     <h4 className='text-3xl	text-primary-500 mb-6 uppercase font-semibold'>
                         {examDetails.title}
@@ -26,7 +27,11 @@ const Exam = () => {
                 </div>
                 <div className='flex items-center justify-between'>
                     <p>{examDetails.note}</p>
-                    <button></button>
+                    <RoundedBtn
+                        label='Submit Exam'
+                        path='/'
+                        className='!px-5 py-3 text-white rounded-full'
+                    />
                 </div>
             </div>
         </div>
