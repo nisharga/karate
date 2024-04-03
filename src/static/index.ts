@@ -2,3 +2,4 @@
 export * from './core';
 export * from './ProfileSidebar';
 export * from './course';
+export * from './exam';
