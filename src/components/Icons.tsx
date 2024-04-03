@@ -141,7 +141,7 @@ export const Icons = {
             </g>
             <defs>
                 <clipPath id='clip0_4_10'>
-                    <rect width='16' height='16' fill='white' />
+                    <rect width='16' height='16' fill='inherite' />
                 </clipPath>
             </defs>
         </svg>
