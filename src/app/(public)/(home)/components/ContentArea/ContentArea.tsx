@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { Course } from './Course';
 import Avater from '@/components/Avater';
+import { ExamThumb } from './ExamThumb';
 
 const ContentArea = () => {
     return (
@@ -24,6 +25,9 @@ const ContentArea = () => {
                         src='https://i.ibb.co/d49ktxK/pointer.png'
                         className='!w-full'
                     />
+                </div>
+                <div className='p-6'>
+                    <ExamThumb />
                 </div>
             </div>
         </div>

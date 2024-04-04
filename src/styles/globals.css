@@ -42,26 +42,30 @@
     }
 }
 
-.border-dashed-full { 
-    border: 2px dashed #26235B;
+.border-dashed-full {
+    border: 2px dashed #26235b;
 }
 
-input[type="radio"] + label span {
-    transition: background .2s,
-      transform .2s;
+input[type='radio'] + label span {
+    transition:
+        background 0.2s,
+        transform 0.2s;
 }
 
-input[type="radio"] + label span:hover,
-input[type="radio"] + label:hover span{
-  transform: scale(1.2);
-} 
-
-input[type="radio"]:checked + label span {
-  background-color: #26235B;
-  box-shadow: 0px 0px 0px 2px white inset;
+input[type='radio'] + label span:hover,
+input[type='radio'] + label:hover span {
+    transform: scale(1.2);
 }
 
-input[type="radio"]:checked + label{
-   color: #26235B;
+input[type='radio']:checked + label span {
+    background-color: #26235b;
+    box-shadow: 0px 0px 0px 2px white inset;
 }
 
+input[type='radio']:checked + label {
+    color: #26235b;
+}
+
+.fill-gray-500 {
+    fill: blue !importent;
+}
