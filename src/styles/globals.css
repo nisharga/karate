@@ -43,7 +43,7 @@
 }
 
 .border-dashed-full { 
-    border: 2px dashed #949494;
+    border: 2px dashed #26235B;
 }
 
 input[type="radio"] + label span {
@@ -57,11 +57,11 @@ input[type="radio"] + label:hover span{
 } 
 
 input[type="radio"]:checked + label span {
-  background-color: #3490DC;  
+  background-color: #26235B;
   box-shadow: 0px 0px 0px 2px white inset;
 }
 
 input[type="radio"]:checked + label{
-   color: #3490DC;  
+   color: #26235B;
 }
 

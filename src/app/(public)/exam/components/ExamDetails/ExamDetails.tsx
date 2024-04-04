@@ -5,7 +5,7 @@ import { ImageUpload } from '@/utils';
 const ExamDetails = () => {
     return (
         <div>
-            <AccordionItem title='1.MCQ Question (Mark50)'>
+            <AccordionItem title='1.MCQ Question (Mark50)' className='bg-white'>
                 <QuestionList />
             </AccordionItem>
             <AccordionItem
