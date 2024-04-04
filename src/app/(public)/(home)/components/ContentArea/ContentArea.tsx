@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { Course } from './Course';
-import Avater from '@/components/Avater';
 import { ExamThumb } from './ExamThumb';
+import { KarateBeltsList } from './KarateBeltsList';
 
 const ContentArea = () => {
     return (
@@ -20,11 +20,8 @@ const ContentArea = () => {
                 <div className='py-6'>
                     <Course />
                 </div>
-                <div className=''>
-                    <Avater
-                        src='https://i.ibb.co/d49ktxK/pointer.png'
-                        className='!w-full'
-                    />
+                <div className='pb-6'>
+                    <KarateBeltsList />
                 </div>
                 <div className='p-6'>
                     <ExamThumb />

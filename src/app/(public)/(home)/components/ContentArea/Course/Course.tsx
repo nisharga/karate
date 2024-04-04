@@ -8,18 +8,18 @@ import { motion } from 'framer-motion';
 const Course = () => {
     return (
         <motion.div
-            className='flex gap-4'
-            initial={{ opacity: 0, x: 100 }} // start off-screen to the left
-            animate={{ opacity: 1, x: 0 }} // end at its natural position
+            className='grid grid-cols-12 gap-4'
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
         >
-            <div className=''>
+            <div className='col-span-12 lg:col-span-5'>
                 <Avater
                     src={courseDetails?.image}
-                    className='!min-w-[400px] !min-h-[260px]'
+                    className='!w-full !h-[220px]'
                 />
             </div>
-            <div className='w-full'>
+            <div className='col-span-12 lg:col-span-7'>
                 <div className='flex justify-between items-center'>
                     <h4 className='text-base	text-primary-500 mb-6 uppercase font-semibold'>
                         {courseDetails?.title}

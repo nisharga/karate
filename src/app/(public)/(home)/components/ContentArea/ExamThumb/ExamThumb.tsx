@@ -10,7 +10,11 @@ import { UseFulLinks } from '../UseFulLinks';
 
 const ExamThumb = () => {
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0, x: 100 }} // start off-screen to the left
+            animate={{ opacity: 1, x: 0 }} // end at its natural position
+            transition={{ duration: 0.5 }}
+        >
             <div className='grid grid-cols-12 gap-4'>
                 <div className='col-span-12 lg:col-span-6'>
                     <div className='mb-6 mt-2'>
@@ -45,7 +49,7 @@ const ExamThumb = () => {
                     </motion.div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 };
 

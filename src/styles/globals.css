@@ -69,3 +69,12 @@ input[type='radio']:checked + label {
 .fill-gray-500 {
     fill: blue !importent;
 }
+
+.rectangle::after {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 50px solid #555;
+    background-color: red;
+}
