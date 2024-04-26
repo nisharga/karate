@@ -1,10 +1,12 @@
 'use client';
 import { Icons, Logo } from '@/components';
-import Avater from '@/components/Avater';
 import { Menu } from '@/static';
 import { AnimatePresence, motion } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { Menubar, MenubarMenu } from '@/components/ui/menubar';
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 const TheHeader = () => {
     const [isShowMobileMenu, setIsShowMobileMenu] = useState(false);
@@ -19,7 +21,7 @@ const TheHeader = () => {
     }, [isShowMobileMenu]);
 
     return (
-        <header className='sticky top-0 z-50 pt-3 bg-primary-500 shadow-sm'>
+        <header className='sticky top-0 z-50 pt-3 bg-primary-500 shadow-sm bg-main-500'>
             <div className='container'>
                 {/* larger device menu */}
 
@@ -35,15 +37,18 @@ const TheHeader = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                         >
-                            {Menu.map(({ id, route, label }) => (
-                                <Link
-                                    className={`whitespace-nowrap transition-colors duration-300 text-success px-3 py-1.5 md:py-2.5 hover:bg-primary-300 hover:rounded-md`}
-                                    key={id}
-                                    href={route}
-                                >
-                                    {label}
-                                </Link>
-                            ))}
+                            <Menubar className='bg-transparent border-none text-white'>
+                                {Menu.map(({ id, route, label }) => (
+                                    <MenubarMenu key={id}>
+                                        <Link
+                                            className={`whitespace-nowrap transition-colors duration-300 text-success px-4 py-1.5 md:py-2.5 rounded-md hover:bg-white hover:text-main-500  `}
+                                            href={route}
+                                        >
+                                            {label}
+                                        </Link>
+                                    </MenubarMenu>
+                                ))}
+                            </Menubar>
                         </motion.div>
                     </AnimatePresence>
                     <div className='flex gap-5'>
@@ -51,10 +56,13 @@ const TheHeader = () => {
                             <Icons.Search className='fill-white  inline-block' />
                         </div>
                         <div>
-                            <Avater
-                                src='https://i.ibb.co/BcJHh9p/man.png'
-                                className='min-w-12 !h-12'
-                            />
+                            <Avatar>
+                                <AvatarImage
+                                    src='https://i.ibb.co/BcJHh9p/man.png'
+                                    alt='@shadcn'
+                                />
+                                <AvatarFallback>CN</AvatarFallback>
+                            </Avatar>
                         </div>
                     </div>
                 </div>

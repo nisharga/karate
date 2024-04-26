@@ -4,9 +4,10 @@ import { coursechedule } from '@/static';
 import React from 'react';
 import { CourseTitle } from '../CourseTItle';
 import { CourseDetails } from '../CourseDetails';
-import { RoundedBtn } from '@/utils';
 import { motion } from 'framer-motion';
 import { UseFulLinks } from '../UseFulLinks';
+import { Button } from '@/components/ui/button';
+import { RoundedBtn } from '@/utils';
 
 const ExamThumb = () => {
     return (
@@ -39,13 +40,14 @@ const ExamThumb = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        whileHover={{ scale: 1.05 }}
+                        whileHover={{ scale: 1.01 }}
                     >
-                        <RoundedBtn
-                            label='Start Exam'
-                            path='/exam'
-                            className='!px-5 py-3 text-white rounded-full !animate-bounce'
-                        />
+                        <Button
+                            asChild
+                            className='!px-5 py-3 text-white rounded-full !animate-bounce bg-main-500'
+                        >
+                            <RoundedBtn label='Start Exam' path='/exam' />
+                        </Button>
                     </motion.div>
                 </div>
             </div>

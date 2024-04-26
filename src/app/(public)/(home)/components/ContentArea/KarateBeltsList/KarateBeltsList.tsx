@@ -10,11 +10,11 @@ const KarateBeltsList = () => {
             animate={{ opacity: 1, y: 0 }} // end at its natural position
             transition={{ duration: 0.5 }}
         >
-            <div className='grid grid-cols-12  gap-2 lg:gap-4'>
+            <div className='grid grid-cols-12 gap-2 lg:gap-4'>
                 {ALLBELTS.map((data) => (
                     <div
-                        className={`col-span-1 bg-gray-25 rounded-full h-12 w-12 flex items-center justify-center ${
-                            data.active === true && 'border-secondary border-2'
+                        className={`col-span-1 bg-second-800 rounded-full h-12 w-12 flex items-center justify-center ${
+                            data.active && 'border-second border-2'
                         }`}
                         key={data.id}
                     >
@@ -26,7 +26,7 @@ const KarateBeltsList = () => {
                     </div>
                 ))}
             </div>
-            <div className='w-full bg-gray-25 h-1 rounded-full -z-10 -mt-6'></div>
+            <div className='w-full bg-second-800 h-1 rounded-full -z-10 -mt-6'></div>
         </motion.div>
     );
 };

@@ -2,12 +2,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 import { motion } from 'framer-motion';
-import Avater from '@/components/Avater';
+import Image from 'next/image';
 
 const ProfilePicture = ({ src }: any) => {
     return (
         <div className='border-4 border-gray-150 rounded-full w-52 h-52'>
-            <div className='border-4 border-gray-200 rounded-full w-[200px] h-[200px]'>
+            <div className='border-4 border-gray-200 rounded-full w-[200px] h-[200px] flex items-center justify-center'>
                 <motion.div
                     animate={{
                         scale: [1, 2, 2, 1, 1],
@@ -20,10 +20,14 @@ const ProfilePicture = ({ src }: any) => {
                         repeatDelay: 1
                     }}
                 >
-                    <Avater
+                    <Image
+                        height={35}
+                        width={100}
                         src={src}
+                        alt='avater'
                         className='!w-full !h-full border-4	border-gray-75 rounded-full'
-                    ></Avater>
+                        unoptimized
+                    />
                 </motion.div>
             </div>
         </div>

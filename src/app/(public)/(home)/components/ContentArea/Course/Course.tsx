@@ -16,20 +16,20 @@ const Course = () => {
             <div className='col-span-12 lg:col-span-5'>
                 <Avater
                     src={courseDetails?.image}
-                    className='!w-full !h-[220px]'
+                    className='!w-full !h-[240px]'
                 />
             </div>
             <div className='col-span-12 lg:col-span-7'>
                 <div className='flex justify-between items-center'>
-                    <h4 className='text-base	text-primary-500 mb-6 uppercase font-semibold'>
+                    <h4 className='text-2xl text-main-500 mb-4 uppercase font-semibold'>
                         {courseDetails?.title}
                     </h4>
                     <Icons.Share className='cursor-pointer' />
                 </div>
                 <div className=''>
-                    <p className=''>
+                    <p className='text-second-600'>
                         {courseDetails?.content}{' '}
-                        <span className='cursor-pointer text-primary-500'>
+                        <span className='cursor-pointer text-main-500'>
                             More Info{' '}
                             <Icons.Arrow className='inline'></Icons.Arrow>
                         </span>

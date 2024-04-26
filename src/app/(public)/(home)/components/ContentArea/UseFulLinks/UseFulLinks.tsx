@@ -10,17 +10,20 @@ const UseFulLinks = () => {
             transition={{ duration: 1 }}
             className='flex gap-2 '
         >
-            <Link href='/' className='text-gray-50 md:flex items-center gap-2 '>
+            <Link
+                href='/'
+                className='text-second-600 md:flex items-center gap-2 '
+            >
                 <Icons.Routine /> <span>Class Routine</span>
             </Link>
-            <span className='text-gray-50'>|</span>
-            <Link href='/' className='text-gray-50 flex items-center gap-2 '>
-                <Icons.Report className='fill-gray-50' />{' '}
+            <span className='text-second-600'>|</span>
+            <Link href='/' className='text-second-600 flex items-center gap-2 '>
+                <Icons.Report className='fill-second-600' />{' '}
                 <span>Report a Problem</span>
             </Link>
-            <span className='text-gray-50'>|</span>
-            <Link href='/' className='text-gray-50 flex items-center gap-2'>
-                <Icons.Review className='fill-gray-50' />{' '}
+            <span className='text-second-600'>|</span>
+            <Link href='/' className='text-second-600 flex items-center gap-2'>
+                <Icons.Review className='fill-second-600 ' />{' '}
                 <span>Give a Review</span>
             </Link>
         </motion.div>

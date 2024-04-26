@@ -38,41 +38,6 @@ const Question: FC<IProps> = ({ questions }) => {
                     </label>
                 </div>
             ))}
-
-            {/*  <input type='radio' id='html' name='fav_language' value='HTML' />
-            <label htmlFor='html'>HTML</label>
-
-            
-            <input type='radio' id='css' name='fav_language' value='CSS' />
-            <label htmlFor='css'>CSS</label> */}
-            {/* <input
-                type='radio'
-                id='html'
-                name='fav_language'
-                className='hidden'
-                value='HTML'
-            />
-            <label
-                htmlFor='html'
-                className='flex items-center cursor-pointer ml-2'
-            >
-                <span className='w-4 h-4 inline-block mr-1 rounded-full border border-grey'></span>
-                Html
-            </label>
-            <input
-                type='radio'
-                id='css'
-                name='fav_language'
-                className='hidden'
-                value='CSS'
-            />
-            <label
-                htmlFor='css'
-                className='flex items-center cursor-pointer ml-2'
-            >
-                <span className='w-4 h-4 inline-block mr-1 rounded-full border border-grey'></span>
-                CSS
-            </label> */}
         </div>
     );
 };

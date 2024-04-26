@@ -10,19 +10,19 @@ export const SIDEBAR = [
     {
         id: '2',
         label: 'Online Courses',
-        icon: <Icons.King className='fill-gray-500' />,
+        icon: <Icons.King className='fill-gray-500 hover:fill-white' />,
         route: '/'
     },
     {
         id: '3',
         label: 'Videos',
-        icon: <Icons.Upload className='fill-gray-500' />,
+        icon: <Icons.Upload className='fill-gray-500 hover:fill-white' />,
         route: '/'
     },
     {
         id: '4',
         label: 'Equipments',
-        icon: <Icons.Shop className='fill-gray-500' />,
+        icon: <Icons.Shop className='fill-gray-500 hover:fill-white' />,
         route: '/'
     },
     {

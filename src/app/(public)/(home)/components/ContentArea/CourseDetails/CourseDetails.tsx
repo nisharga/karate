@@ -4,18 +4,18 @@ import React from 'react';
 const CourseDetails = () => {
     return (
         <div className='flex flex-col gap-4 mt-4'>
-            <p className=' text-primary-500 font-semibold '>
+            <p className=' text-main-500 font-semibold '>
                 Instrusctor:{' '}
                 <span className='ml-2'>{coursechedule.instructor}</span>
             </p>
-            <p className=' '>
+            <p className='text-second-600'>
                 Exam Name:{' '}
                 <span className='ml-2'>
                     {coursechedule.exam} <br />
                 </span>
             </p>
             <div className='grid grid-cols-12'>
-                <div className='col-span-12 md:col-span-4 text-red'>
+                <div className='col-span-12 md:col-span-4 text-second-600 '>
                     Exam Sehedule:
                 </div>
                 <div className='col-span-12 md:col-span-8 text-green-500'>

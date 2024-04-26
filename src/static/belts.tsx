@@ -2,7 +2,7 @@ import { Icons } from '@/components/Icons';
 export const ALLBELTS = [
     {
         id: 1,
-        icon: <Icons.BeltSelected />,
+        icon: <Icons.BeltSelected className='' />,
         active: true
     },
     {

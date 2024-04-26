@@ -1,80 +1,79 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind components;
+  @tailwind utilities;
 
-@layer base {
+  @layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 240 10% 3.9%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 240 10% 3.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 240 10% 3.9%;
+
+      --primary: 240 5.9% 10%;
+      --primary-foreground: 0 0% 98%;
+
+      --secondary: 240 4.8% 95.9%;
+      --secondary-foreground: 240 5.9% 10%;
+
+      --muted: 240 4.8% 95.9%;
+      --muted-foreground: 240 3.8% 46.1%;
+
+      --accent: 240 4.8% 95.9%;
+      --accent-foreground: 240 5.9% 10%;
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 240 5.9% 90%;
+      --input: 240 5.9% 90%;
+      --ring: 240 10% 3.9%;
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 240 10% 3.9%;
+      --foreground: 0 0% 98%;
+
+      --card: 240 10% 3.9%;
+      --card-foreground: 0 0% 98%;
+
+      --popover: 240 10% 3.9%;
+      --popover-foreground: 0 0% 98%;
+
+      --primary: 0 0% 98%;
+      --primary-foreground: 240 5.9% 10%;
+
+      --secondary: 240 3.7% 15.9%;
+      --secondary-foreground: 0 0% 98%;
+
+      --muted: 240 3.7% 15.9%;
+      --muted-foreground: 240 5% 64.9%;
+
+      --accent: 240 3.7% 15.9%;
+      --accent-foreground: 0 0% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 0 0% 98%;
+
+      --border: 240 3.7% 15.9%;
+      --input: 240 3.7% 15.9%;
+      --ring: 240 4.9% 83.9%;
+    }
+  }
+
+  @layer base {
     * {
-        @apply m-0 p-0 box-border;
+      @apply border-border;
     }
     body {
-        @apply text-base bg-success dark:bg-gray-900 text-gray-800 dark:text-gray-300 font-normal font-roboto leading-normal;
+      @apply bg-background text-foreground;
     }
-
-    h1 {
-        @apply text-5xl xs:text-6xl font-semibold;
-    }
-    h2 {
-        @apply text-4xl xs:text-5xl font-medium;
-    }
-    h3 {
-        @apply text-xl;
-    }
-}
-
-@layer utilities {
-    .section-gap {
-        @apply mb-16 md:mb-[150px];
-    }
-
-    .modal-open {
-        @apply overflow-hidden;
-    }
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    .no-scrollbar::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* Hide scrollbar for IE, Edge and Firefox */
-    .no-scrollbar {
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
-    }
-}
-
-.border-dashed-full {
-    border: 2px dashed #26235b;
-}
-
-input[type='radio'] + label span {
-    transition:
-        background 0.2s,
-        transform 0.2s;
-}
-
-input[type='radio'] + label span:hover,
-input[type='radio'] + label:hover span {
-    transform: scale(1.2);
-}
-
-input[type='radio']:checked + label span {
-    background-color: #26235b;
-    box-shadow: 0px 0px 0px 2px white inset;
-}
-
-input[type='radio']:checked + label {
-    color: #26235b;
-}
-
-.fill-gray-500 {
-    fill: blue !importent;
-}
-
-.rectangle::after {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 50px solid #555;
-    background-color: red;
-}
+   h1, h2, h3, h4, h5, h6{
+      @apply font-black;
+   } 
+  }

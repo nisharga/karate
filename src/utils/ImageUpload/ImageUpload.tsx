@@ -13,15 +13,17 @@ const ImageUpload = () => {
 
     return (
         <div onClick={handleDivClick} className='py-8 mx-auto'>
-            <div className='flex flex-col items-center justify-center gap-4 border-dashed-full  p-6 rounded-md'>
-                <p className='text-base text-primary-500 uppercase mb-12'>
-                    Upload Your Practicle Exam Video
-                </p>
-                <button className='p-3 border-secondary border text-secondary flex items- rounded-md'>
-                    <Icons.Uploadvideo />{' '}
-                    <span className='ml-4'> Upload Video</span>
-                </button>
-                <p className='!mt-6 !mb-12'>file name</p>
+            <div className='flex flex-col items-center justify-center gap-4 '>
+                <div className='w-3/4 md:w-1/3 flex flex-col items-center justify-center py-6 border-dashed border-2 border-second-500 p-6 rounded-md'>
+                    <p className='text-base text-main-500 uppercase mb-12'>
+                        Upload Your Practicle Exam Video
+                    </p>
+                    <button className='p-3 border-second-500 border text-second-500 flex items- rounded-md'>
+                        <Icons.Uploadvideo />{' '}
+                        <span className='ml-4'> Upload Video</span>
+                    </button>
+                    <p className='!mt-6 !mb-12'>file name</p>
+                </div>
             </div>
 
             <input
